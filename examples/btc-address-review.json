@@ -1,0 +1,10 @@
+{
+  "chain": "btc",
+  "address": "bc1qexampleaddressredacted0000000000000000000000",
+  "format_status": "format-check-review",
+  "explorer_urls": [
+    "https://mempool.space/address/bc1qexampleaddressredacted0000000000000000000000",
+    "https://blockstream.info/address/bc1qexampleaddressredacted0000000000000000000000"
+  ],
+  "safety_note": "Read-only review. Never collect seed phrases, private keys, wallet files, or credentials."
+}
