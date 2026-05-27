@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CZB Address Risk Record",
+  "type": "object",
+  "required": ["chain", "address", "observed_at_utc", "confidence", "sources"],
+  "properties": {
+    "chain": {
+      "type": "string",
+      "enum": ["btc", "ltc", "eth", "other"]
+    },
+    "address": {
+      "type": "string"
+    },
+    "observed_at_utc": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "risk_flags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "confidence": {
+      "type": "string",
+      "enum": ["confirmed", "likely", "watch", "unknown"]
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uri"
+      }
+    },
+    "notes": {
+      "type": "string"
+    }
+  }
+}
